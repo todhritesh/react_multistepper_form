@@ -69,7 +69,7 @@ function index() {
                 :
                 <>
                     <div className="grow"></div>
-                    <div className="self-end flex gap-4">
+                    <div className="md:self-end flex self-center gap-4">
                         <button onClick={back} type="button"  className='bg-gray-400 px-4 py-2 rounded text-gray-50 hover:text-white hover:bg-gray-600' >Back</button>
                         <button type="submit" className='bg-green-500 px-4 py-2 rounded text-gray-100 hover:text-white hover:bg-green-600' >Next</button>
                     </div>
