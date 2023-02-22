@@ -15,7 +15,7 @@ function Step3({step3Data , setStep3Data}) {
         }))
     }
   return (
-    <motion.div initial={{x:'-100vw'}} animate={{x:'0vw',transition:{duration:.5}}} className="stepper_1  gap-4 flex  flex-col">
+    <motion.div initial={{x:'-100vw'}} animate={{x:'0vw',transition:{duration:.5}}} className="stepper_1 gap-4 flex  flex-col">
 
             <div className='flex flex-col gap-6'>
                 <div className='border-b-2 border-gray-600'>
