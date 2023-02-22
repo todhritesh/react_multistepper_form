@@ -62,25 +62,25 @@ function Step1({ step1Data, setStep1Data }) {
         }))
     }
     return (
-        <motion.div initial={{x:'-100vw'}} animate={{x:'0vw',transition:{duration:.5}}} className="stepper_1 overflow-auto items-center md:flex-row flex-col flex">
+        <motion.div initial={{x:'-100vw'}} animate={{x:'0vw',transition:{duration:.5}}} className="stepper_1 overflow-auto items-center md:flex-row flex-col w-full flex">
 
-            <div className='w-6/12 my-4 flex gap-10 flex-col p-2' >
+            <div className='md:w-6/12 w-full my-4 flex gap-10 flex-col p-2' >
                 {
                     step1Data.step1_select.map((item, i) => (
                         <div key={i} onClick={() => handle_notary_click(i)} className={`border-2 ring-2 rounded-lg flex items-center p-4 duration-200 cursor-pointer hover:bg-yellow-100 ${item.isSelected && 'bg-yellow-200'}`}>
                             <div className='' >
-                                <p className="text-xl px-2 inline py-2 rounded-lg bg-pink-100">{item.title}</p>
+                                <span className="text-xl px-2 py-2  rounded-lg bg-pink-100">{item.title}</span>
                                 <p className="text-red-400 leading-4 text-sm mt-5">{item.descr}</p>
                             </div>
                             <div>
-                                {item.isPopular && <p>Popular</p>}
+                                {item.isPopular && <p className='text-sm' >Popular</p>}
                             </div>
                         </div>
                     ))
                 }
             </div>
 
-            <div className='w-6/12 p-2 border-4' >
+            <div className='md:w-6/12 w-full p-2 border-4' >
                 <h3 className="text-xl my-4">CALCULATE YOUR COST FOR RON!</h3>
                 <div className="fileds flex gap-4 flex-col">
                     <div className='flex w-full justify-between items-center p-2 gap-4 ' >

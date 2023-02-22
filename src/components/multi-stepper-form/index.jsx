@@ -47,7 +47,7 @@ function index() {
 
     return (
         <form onSubmit={handleSubmit} >
-        <div className="min-w-[700px] max-w-[700px] flex flex-col gap-4 overflow-auto p-4 border-2 rounded-lg border-gray-500 min-h-[800px]">
+        <div className="md:min-w-[700px] max-w-[700px] flex flex-col gap-4 overflow-auto p-4 border-2 rounded-lg border-gray-500 min-h-[800px]">
             <div className="flex md:flex-row flex-col md:justify-between md:items-start items-center">
                 <div>
                     <h1 className="text-2xl text-black">New Appointment Request</h1>
